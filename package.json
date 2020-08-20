@@ -1,0 +1,28 @@
+{
+    "name": "@vladbasin/rn-ui-kitten-components",
+    "version": "1.0.0",
+    "description": "Additional React Native components for UI Kitten library ",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "prepublishOnly": "rm -r -f dist && cd src && barrelsby --delete && cd .. && tsc"
+    },
+    "author": "Vlad Basin",
+    "license": "GPL-3.0-only",
+    "devDependencies": {
+        "@types/lodash": "^4.14.159",
+        "@types/react-native": "^0.63.2",
+        "barrelsby": "^2.2.0",
+        "typescript": "^3.9.7"
+    },
+    "dependencies": {
+        "@eva-design/eva": "^2.0.0",
+        "@ui-kitten/components": "^5.0.0",
+        "@vladbasin/ts-types": "^1.0.2",
+        "lodash": "^4.17.20",
+        "react": "^16.13.1",
+        "react-native": "^0.63.2",
+        "react-native-progress-circle": "^2.1.0",
+        "react-native-svg": "^12.1.0"
+    }
+}
