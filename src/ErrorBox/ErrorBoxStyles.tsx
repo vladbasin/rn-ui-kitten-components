@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const Styles = StyleSheet.create({
+export const ErrorBoxStyles = StyleSheet.create({
     transactionErrorContainer: {
         padding: 16,
         borderRadius: 8,

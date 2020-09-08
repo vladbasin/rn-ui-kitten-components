@@ -18,11 +18,13 @@
     "dependencies": {
         "@eva-design/eva": "^2.0.0",
         "@ui-kitten/components": "^5.0.0",
+        "@vladbasin/rn-navigation": "^1.0.0",
         "@vladbasin/ts-types": "^1.0.2",
         "lodash": "^4.17.20",
         "react": "^16.13.1",
         "react-native": "^0.63.2",
         "react-native-progress-circle": "^2.1.0",
-        "react-native-svg": "^12.1.0"
+        "react-native-svg": "^12.1.0",
+        "react-navigation-hooks": "^1.1.0"
     }
 }

@@ -5,7 +5,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { View } from 'react-native';
 import { LoaderIndicator } from '../LoaderIndicator/LoaderIndicator';
 import { LoaderContext } from './Models/LoaderContext';
-import { Styles } from './Styles';
+import { LoaderProviderStyles } from './LoaderProviderStyles';
 import { LoaderTaskType } from './Types/LoaderTaskType';
 
 type LoaderProviderPropsType = {
@@ -81,13 +81,13 @@ export const LoaderProvider = (props: LoaderProviderPropsType) => {
         >
             {props.children}
             {isVisible &&
-                <View style={Styles.container}>
-                    <View style={Styles.background} />
+                <View style={LoaderProviderStyles.container}>
+                    <View style={LoaderProviderStyles.background} />
                     <LoaderIndicator progress={currentProgress} />
                     {!isNil(currentHandler) &&
                         <Button 
                             status="basic" 
-                            style={Styles.cancelButton}
+                            style={LoaderProviderStyles.cancelButton}
                             onPress={onCancel}
                         >
                             {props.cancelLabel}

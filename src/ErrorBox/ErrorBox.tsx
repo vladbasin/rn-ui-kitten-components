@@ -3,7 +3,7 @@ import { Maybe } from "@vladbasin/ts-types";
 import { isNil } from 'lodash';
 import React from "react";
 import { View } from 'react-native';
-import { Styles } from "./Styles";
+import { ErrorBoxStyles } from "./ErrorBoxStyles";
 
 type ErrorBoxPropsType = {
     error: Maybe<string>,
@@ -15,7 +15,7 @@ export const ErrorBox = (props: ErrorBoxPropsType) => {
     return (
         <>
             {!isNil(props.error) &&
-                <View style={[Styles.transactionErrorContainer, { backgroundColor: theme["color-danger-800"] }]}>
+                <View style={[ErrorBoxStyles.transactionErrorContainer, { backgroundColor: theme["color-danger-800"] }]}>
                     <Text>{props.error}</Text>
                 </View>
             }
