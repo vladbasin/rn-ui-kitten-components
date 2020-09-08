@@ -1,6 +1,6 @@
 {
     "name": "@vladbasin/rn-ui-kitten-components",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Additional React Native components for UI Kitten library ",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -17,24 +17,23 @@
         "@eva-design/eva": "^2.0.0",
         "@ui-kitten/components": "^5.0.0",
         "@vladbasin/rn-navigation": "^1.0.0",
-        "@vladbasin/ts-types": "^1.0.2",
-        "lodash": "^4.17.20",
         "react": "^16.13.1",
         "react-native": "^0.63.2",
-        "react-native-progress-circle": "^2.1.0",
         "react-native-svg": "^12.1.0",
         "react-navigation-hooks": "^1.1.0"
+    },
+    "dependencies": {
+        "lodash": "^4.17.20",
+        "@vladbasin/ts-types": "^1.0.2",
+        "react-native-progress-circle": "^2.1.0"
     },
     "peerDependencies": {
         "@eva-design/eva": "^2.0.0",
         "@ui-kitten/components": "^5.0.0",
         "@vladbasin/rn-navigation": "^1.0.0",
-        "@vladbasin/ts-types": "^1.0.2",
-        "lodash": "^4.17.20",
-        "react": "^16.13.1",
-        "react-native": "^0.63.2",
-        "react-native-progress-circle": "^2.1.0",
-        "react-native-svg": "^12.1.0",
-        "react-navigation-hooks": "^1.1.0"
+        "react": "*",
+        "react-native": "~0.63.2",
+        "react-native-svg": "~12.1.0",
+        "react-navigation-hooks": "~1.1.0"
     }
 }
