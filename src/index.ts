@@ -13,3 +13,5 @@ export * from "./LoaderProvider/Hooks/useLoader";
 export * from "./LoaderProvider/Models/LoaderContext";
 export * from "./LoaderProvider/Types/LoaderContextType";
 export * from "./LoaderProvider/Types/LoaderTaskType";
+export * from "./TabMenu/TabMenu";
+export * from "./TabMenu/Types/TabMenuItemType";
