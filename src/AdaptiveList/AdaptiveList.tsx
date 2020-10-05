@@ -1,4 +1,5 @@
 import { Button, List } from '@ui-kitten/components';
+import { EvaSize } from '@ui-kitten/components/devsupport';
 import { useEventAggregator } from '@vladbasin/ts-services-reactjs';
 import { Maybe } from '@vladbasin/ts-types';
 import { isNil } from 'lodash';
@@ -26,6 +27,7 @@ type AdaptiveListPropsType<T> = {
     refreshLabel?: string,
     refreshTintColor?: string,
     searchInputStyle?: StyleProp<ViewStyle>,
+    searchInputSize?: EvaSize,
     horizontalListMargin?: number,
     minItemWidth: number,
     renderItem: (itemInfo: RenderItemInfo<T>) => ReactElement<any>,
@@ -67,6 +69,7 @@ export const AdaptiveList = <T extends unknown>(props: AdaptiveListPropsType<T>)
         return (
             <SearchBox
                 style={props.searchInputStyle}
+                size={props.searchInputSize}
                 placeholder={props.searchPlaceholder || ""}
                 onQueryChanged={query => props.onSearchQueryChanged && props.onSearchQueryChanged(query)}
             />

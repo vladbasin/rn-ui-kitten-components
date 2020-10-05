@@ -1,4 +1,5 @@
 import { Input } from "@ui-kitten/components";
+import { EvaSize } from "@ui-kitten/components/devsupport";
 import lodash from "lodash";
 import React, { useMemo, useState } from 'react';
 import { StyleProp, View, ViewStyle } from 'react-native';
@@ -7,6 +8,7 @@ import { SearchBoxStyles } from './SearchBoxStyles';
 type SearchBoxPropsType = {
     placeholder: string,
     style?: StyleProp<ViewStyle>,
+    size?: EvaSize,
     onQueryChanged: (newQuery: string) => void
 }
 
@@ -31,7 +33,7 @@ export const SearchBox = (props: SearchBoxPropsType) => {
             <Input
                 style={[SearchBoxStyles.input, props.style]}
                 textStyle={SearchBoxStyles.text}
-                size="small"
+                size={props.size}
                 placeholder={props.placeholder}
                 value={value}
                 onChangeText={onValueChanged}
