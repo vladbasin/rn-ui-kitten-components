@@ -4,13 +4,13 @@ import React, { useMemo, useState } from 'react';
 import { StyleProp, View, ViewStyle } from 'react-native';
 import { SearchBoxStyles } from './SearchBoxStyles';
 
-interface SearchBoxPropsContract {
+type SearchBoxPropsType = {
     placeholder: string,
     style?: StyleProp<ViewStyle>,
     onQueryChanged: (newQuery: string) => void
 }
 
-export const SearchBox = (props: SearchBoxPropsContract) => {
+export const SearchBox = (props: SearchBoxPropsType) => {
     const [value, setValue] = useState<string>();
 
     const triggerQueryChangeDebounced = useMemo(() => {
